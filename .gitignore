@@ -1,0 +1,7 @@
+# IDE configs
+.idea
+.vscode
+# Cache
+*cache*
+# Virtual Environment
+venv
