@@ -10,6 +10,8 @@ Linux: `source ./venv/bin/activate`
 Windows: `.\venv\Scripts\activate`
 
 ## Install packages
+`pip install --upgrade pip` to get latest version of pip
+
 `pip install -r req.txt`
 
 ## Save packages
@@ -19,8 +21,6 @@ Windows: `.\venv\Scripts\activate`
 `jupyter lab` or `jupyter notebook`
 
 # Structure
-`venv` - folder with python virtual environment
-
 `docs` - jupyter notebooks, documentations
 
 `src` - source files
