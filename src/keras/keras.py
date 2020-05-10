@@ -2,6 +2,7 @@ from numpy import loadtxt
 from keras.models import Sequential, load_model
 from keras.layers import Dense
 import pathlib
+import matplotlib.pyplot as plt
 
 ABS_PATH = pathlib.Path(__file__).parent.absolute()
 DATASET_PATH = f"{ABS_PATH}/dataset/pima-indians-diabetes.csv"
@@ -19,7 +20,7 @@ def Keras():
     model.compile(loss='binary_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy'])
-    model.fit(x, y, epochs=100, batch_size=15)
+    history = model.fit(x, y, epochs=100, batch_size=15)
     loss, accuracy = model.evaluate(x, y, verbose=0)
     predictions = model.predict_classes(x)
     print(f"Accuracy: {accuracy}")
@@ -43,3 +44,15 @@ def Keras():
     predicts = loaded.predict_classes(i)
     for k in range(15):
         print('%s => %d (expected %d)' % (i[k].tolist(), predicts[k], j[k]))
+
+    plot(history.history, 'accuracy')
+    plot(history.history, 'loss')
+
+
+def plot(history, field):
+    plt.plot(history[field])
+    plt.title(f'Model {field}')
+    plt.ylabel(field)
+    plt.xlabel('Epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()

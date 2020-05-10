@@ -7,6 +7,7 @@ bleach==3.1.1
 cachetools==4.0.0
 certifi==2019.11.28
 chardet==3.0.4
+cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
 entrypoints==0.3
@@ -14,6 +15,7 @@ gast==0.2.2
 google-auth==1.11.2
 google-auth-oauthlib==0.4.1
 google-pasta==0.1.8
+graphviz==0.14
 grpcio==1.27.2
 h5py==2.10.0
 idna==2.9
@@ -33,9 +35,11 @@ jupyterlab-server==1.0.7
 Keras==2.3.1
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
+kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 Markdown==3.2.1
 MarkupSafe==1.1.1
+matplotlib==3.2.1
 mccabe==0.6.1
 mistune==0.8.4
 more-itertools==8.2.0
@@ -59,6 +63,7 @@ py==1.8.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycodestyle==2.5.0
+pydot==1.4.1
 Pygments==2.6.1
 pylint==2.4.4
 pyparsing==2.4.6
