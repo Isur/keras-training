@@ -1,10 +1,10 @@
 from .checker.version import CheckVersion
-from .keras.keras import Keras
+from .lol.lol import main as lol
 
 
 def Run():
     preRun()
-    Keras()
+    lol()
 
 
 def preRun():
