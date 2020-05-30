@@ -1,4 +1,2 @@
-# Ignore everything
-*
-# Except this file
-!.gitignore
+# dataset
+LeagueofLegends.csv
