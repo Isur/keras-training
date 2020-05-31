@@ -1,10 +1,10 @@
 from .checker.version import CheckVersion
-from .lol.lol import main as lol
+from .wine import wine
 
 
 def Run():
     preRun()
-    lol()
+    wine.Wine()
 
 
 def preRun():
