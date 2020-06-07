@@ -1,5 +1,13 @@
 # How to start
 Project use `python3.7` and `keras`.
+
+## Requirements
+Required LeagueofLegends.csv file in folder:
+
+`src/lol/dataset/`
+
+You can download one from: [here](https://www.kaggle.com/chuckephron/leagueoflegends)
+
 ## Create virtual environment
 Linux: `python3.7 -m venv venv`
 

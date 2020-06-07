@@ -1,10 +1,10 @@
 from .checker.version import CheckVersion
-from .keras.keras import Keras
+from .wine import wine
 
 
 def Run():
     preRun()
-    Keras()
+    wine.Wine()
 
 
 def preRun():
